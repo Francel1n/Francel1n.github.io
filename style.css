@@ -193,14 +193,10 @@ background-color: dark blue;
 color: white;
 text-align: center;
 }*/
-#wesh{
-  position: absolute;
-  top: 270%;
-left: 40%;
-}
 #tela{
   color: blue;
-text-align: center;
+margin-left: auto;
+margin-right: auto;
 font-size: 150%;
 font-family: 'Kaushan Script', cursive;
 }
@@ -236,7 +232,6 @@ margin-right: auto
   background-color:   #023bbf;
   border: 0px solid #ecf0f1;
   border-radius: 0px;
-  justify-content: center;
 }
 .droite{
   margin-left: 100px;
@@ -289,6 +284,41 @@ background: linear-gradient(190deg, white, white);
   -moz-box-shadow:    inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow:         inset 0 0 10px #000000;
+}
+#wesh{
+  position: absolute;
+  top: 270%;
+  justify-content: center;
+}
+.hg{
+  position: absolute;
+  left: 5%;
+  top: 290%;
+  width: 22%;
+  height: 40%;
+  background-color:   #023bbf;
+  border: 0px solid #ecf0f1;
+  border-radius: 5%;
+}
+.hm{
+  position: absolute;
+  right: 5%;
+  top: 290%;
+  width: 22%;
+  height: 40%;
+  background-color:   #023bbf;
+  border: 0px solid #ecf0f1;
+  border-radius: 5%;
+}
+.hd{
+  position: absolute;
+  left: 39%;
+  top: 290%;
+  width: 22%;
+  height: 40%;
+  background-color:   #023bbf;
+  border: 0px solid #ecf0f1;
+  border-radius: 5%;
 }
 .speech-bubble {
 	position: relative;
