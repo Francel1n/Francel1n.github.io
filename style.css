@@ -290,36 +290,95 @@ background: linear-gradient(190deg, white, white);
   top: 270%;
   justify-content: center;
 }
-.hg{
-  position: absolute;
-  left: 5%;
-  top: 290%;
-  width: 22%;
-  height: 40%;
-  background-color:   #023bbf;
-  border: 0px solid #ecf0f1;
-  border-radius: 5%;
-}
-.hm{
-  position: absolute;
-  right: 5%;
-  top: 290%;
-  width: 22%;
-  height: 40%;
-  background-color:   #023bbf;
-  border: 0px solid #ecf0f1;
-  border-radius: 5%;
-}
-.hd{
+.container {
   position: absolute;
   left: 39%;
   top: 290%;
-  width: 22%;
-  height: 40%;
-  background-color:   #023bbf;
-  border: 0px solid #ecf0f1;
-  border-radius: 5%;
+  width: 18%;
+  border-radius: 4%;
+  border: 2px solid blue;
 }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+    border-radius: 4%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #023bbf;
+  border-radius: 4%;
+}
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .containerhm {
+    position: absolute;
+    width: 18%;
+    border-radius: 4%;
+    border: 2px solid blue;
+    top: 290%
+  }
+
+  .imagehm {
+    display: block;
+    width: 100%;
+    height: auto;
+      border-radius: 4%;
+  }
+
+  .overlayhm {
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #023bbf;
+    border-radius: 4%;
+  }
+
+    .containerhm:hover .overlayhm {
+      opacity: 1;
+    }
+
+    .texthm {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
 .speech-bubble {
 	position: relative;
 	background: #0084bb;
