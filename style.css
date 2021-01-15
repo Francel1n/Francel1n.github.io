@@ -195,8 +195,7 @@ text-align: center;
 }*/
 #tela{
   color: blue;
-margin-left: auto;
-margin-right: auto;
+  margin-left: 0;
 font-size: 150%;
 font-family: 'Kaushan Script', cursive;
 }
@@ -285,15 +284,34 @@ background: linear-gradient(190deg, white, white);
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow:         inset 0 0 10px #000000;
 }
-#wesh{
-  position: absolute;
-  top: 270%;
-  justify-content: center;
+.footer {
+   position: absolute;
+   left: 0;
+top: 550%;
+   width: 100%;
+   height: 30%;
+   background-color: blue;
+   color: white;
+   text-align: center;
 }
+#profil{
+  color: blue;
+}
+#wesh{
+  margin-left: 0;
+  position: absolute;
+  top: 295%;
+  left:50%;
+}
+#Profile{
+position: absolute;
+top: 380%;
+}
+
+
 .container {
   position: absolute;
-  left: 39%;
-  top: 290%;
+  top: 330%;
   width: 18%;
   border-radius: 4%;
   border: 2px solid blue;
@@ -340,13 +358,14 @@ background: linear-gradient(190deg, white, white);
     width: 18%;
     border-radius: 4%;
     border: 2px solid blue;
-    top: 290%
+      left: 40%;
+    top: 335%;
   }
 
   .imagehm {
     display: block;
     width: 100%;
-    height: auto;
+    height: auto;s
       border-radius: 4%;
   }
 
@@ -379,6 +398,51 @@ background: linear-gradient(190deg, white, white);
       transform: translate(-50%, -50%);
       text-align: center;
     }
+    .containerhc {
+      position: absolute;
+          left: 70%;
+      top: 330%;
+      width: 18%;
+      border-radius: 4%;
+      border: 2px solid blue;
+    }
+
+    .imagehc {
+      display: block;
+      width: 100%;
+      height: auto;
+        border-radius: 4%;
+    }
+
+    .overlayhc {
+      position: absolute;
+      top: 0%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #023bbf;
+      border-radius: 4%;
+    }
+
+      .containerhc:hover .overlayhc {
+        opacity: 1;
+      }
+
+      .texthc {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
 .speech-bubble {
 	position: relative;
 	background: #0084bb;
