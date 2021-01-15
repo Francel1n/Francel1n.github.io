@@ -194,7 +194,7 @@ color: white;
 text-align: center;
 }*/
 #tela{
-  color: blue;
+  color: #023bbf;
   margin-left: 0;
 font-size: 150%;
 font-family: 'Kaushan Script', cursive;
@@ -211,7 +211,11 @@ font-family: 'Kaushan Script', cursive;
 #pop {
   font-size: 1.2em;
 font-family: 'Kufam', cursive;
-
+}
+#hand{
+  font-size: 1.2em;
+font-family: 'Kufam', cursive;
+color: white;
 }
 #yep{
   position: absolute;
@@ -290,12 +294,12 @@ background: linear-gradient(190deg, white, white);
 top: 550%;
    width: 100%;
    height: 30%;
-   background-color: blue;
+   background-color: #023bbf;
    color: white;
    text-align: center;
 }
 #profil{
-  color: blue;
+  color: #023bbf;
 }
 #wesh{
   margin-left: 0;
@@ -314,7 +318,7 @@ top: 380%;
   top: 330%;
   width: 18%;
   border-radius: 4%;
-  border: 2px solid blue;
+  border: 2px solid #023bbf;
 }
 
 .image {
@@ -357,7 +361,7 @@ top: 380%;
     position: absolute;
     width: 18%;
     border-radius: 4%;
-    border: 2px solid blue;
+    border: 2px solid #023bbf;
       left: 40%;
     top: 335%;
   }
@@ -404,7 +408,7 @@ top: 380%;
       top: 330%;
       width: 18%;
       border-radius: 4%;
-      border: 2px solid blue;
+      border: 2px solid #023bbf;
     }
 
     .imagehc {
