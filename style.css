@@ -206,28 +206,13 @@ display: block;
     /* transform: translate(-50%,-50%); */
     .container { -webkit-box-flex: 1; flex-grow: 1; margin: 0 auto; position: relative; width: auto; }
   }
-  #fleeche {
-    margin-left: 100px;
-    position: relative;
-    top: 10%;
-    left: 6%;
-  }
 .tekst{
   position: relative;
-  top: 90%;
-}
-#tox{
-  position: absolute;
-  top: 5%;
-  left: -8.9%;
-  width: 100%;
-
+  /* top: 90%; */
+  padding: 0%;
 }
 #Haut {
   margin-top: 28%;
-  /* position: absolute;
-  top: 2%;
-  left: -8.7%; */
   color: #bdbdbd;
   text-align: left;
   font-size: 1.3em;
@@ -553,15 +538,26 @@ left: 40%;
   opacity: 1;
   animation: mouse 2s infinite;
 }
+#tox{
+  position: absolute;
+  margin-top: 0%;
+  padding: 0%;
+  top: 25%;
+  left: 0%;
+  /* width: 100%; */
+
+}
 .animated-title {
   color: white;
   font-family: 'Yusei Magic', sans-serif;
   font-size: 5em;;
   height: 90vmin;
-  left: 34%;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  /* left: 34%;
+  top: 50%; */
+  top: 5%;
+  left: 11%;
+  /* transform: translate(-50%, -50%); */
   width: 100vmin;
 }
 .animated-title > div {
@@ -591,7 +587,7 @@ left: 40%;
   transform: translate(0, 100%);
 }
 .animated-title > div.text-top div span:first-child {
-  color: #grey;
+  color: grey;
 }
 .animated-title > div.text-bottom {
   bottom: 0;
