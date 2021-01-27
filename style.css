@@ -350,9 +350,19 @@ left: 39.5%;
 .samy{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 130%;
   background-color: #023bbf;
   text-align: center;
+}
+.github{
+  position: absolute;
+  bottom: 0%;
+  left: 40%;
+}
+.linkedin{
+  position: absolute;
+  bottom: 0%;
+  right: 40%;
 }
 #profil{
   color: #023bbf;
@@ -382,7 +392,7 @@ left: 40%;
 }
 #pcontact{
   position: absolute;
-  left: -190%;
+  left: -100%;
 }
 #contactp{
   position: absolute;
