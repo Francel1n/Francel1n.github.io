@@ -1,47 +1,3 @@
-/* .lds-facebook {
-  z-index: 10;
-  display: inline-block;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background: lightgrey;
-  opacity: 0.5;
-}
-.lds-facebook div {
-  display: inline-block;
-  position: absolute;
-  left: 08px;
-  width: 16px;
-  background: blue;
-  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-}
-.lds-facebook div:nth-child(1) {
-  left: 408px;
-  animation-delay: -0.24s;
-}
-.lds-facebook div:nth-child(2) {
-  left: 432px;
-  animation-delay: -0.12s;
-}
-.lds-facebook div:nth-child(3) {
-  left: 456px;
-  animation-delay: 0;
-}
-@keyframes lds-facebook {
-  0% {
-    top: 8px;
-    height: 64px;
-    opacity: 1;
-  }
-  50%, 100% {
-    top: 24px;
-    height: 32px;
-    opacity: 0;
-  }
-} */
-
 html{
    scroll-behavior: smooth;
 }
@@ -212,7 +168,6 @@ display: block;
   padding: 0%;
 }
 #Haut {
-  margin-top: 28%;
   color: #bdbdbd;
   text-align: left;
   font-size: 1.3em;
@@ -549,13 +504,14 @@ left: 40%;
   animation: mouse 2s infinite;
 }
 #tox{
-  position: absolute;
-  margin-top: 0%;
-  padding: 0%;
+  /* position: absolute;
   top: 25%;
-  left: 0%;
-  /* width: 100%; */
-
+  left: 0%; */
+  position: absolute;
+  top: 65%;
+  left: -7%;
+  width: 90%;
+  height: 10%;
 }
 .animated-title {
   color: white;
