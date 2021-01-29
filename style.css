@@ -26,7 +26,7 @@ align-items: center
  }
 
  h1 {
- color: white;
+ color: white;ada
  font-size: 4rem !important;
  font-weight: 1000;
  line-height: 1.125;
@@ -122,7 +122,6 @@ background-color: transparent;
 }
 .dropdown {
   position: absolute;
-  top: 7%;
   left: 93%;
 display: inline-block;
 
@@ -155,13 +154,6 @@ display: block;
   top: 0%;
   left: 0%;
 } */
-.corps{
-    position: absolute;
-    top: 250%;
-    left: 37%;
-    /* transform: translate(-50%,-50%); */
-    .container { -webkit-box-flex: 1; flex-grow: 1; margin: 0 auto; position: relative; width: auto; }
-  }
 .tekst{
   position: relative;
   /* top: 90%; */
@@ -204,7 +196,7 @@ text-align: center;
 }
 #tela{
   color: #023bbf;
-font-size: 150%;
+font-size: 3.5em;
   font-family: 'Yusei Magic', sans-serif;
    text-align: center;
 }
@@ -351,7 +343,7 @@ left: 40%;
 }
 #contactp{
   position: absolute;
-  left: 150%;
+  left: 100%;
   width: 120%;
 }
 .container {
