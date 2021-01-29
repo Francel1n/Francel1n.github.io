@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0%; margin: 5%;} </style>
+    <script src="p5.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <title>Francelin - Morpion en P5.js</title>
+    <link rel="icon" href="icon.ico">
+  </head>
+  <body>
+    <h1>Jeu du morpion en P5.js</h1>
+    <style>
+    h1{
+      color: blue;
+      margin-left: 6%;
+    }
+    h2{
+      position: absolute;
+      left: 45%;
+      width: 10%;
+    }
+    container{
+      overflow-y:scroll;
+      height: 75%;
+      position: absolute;
+      left: 55%;
+      width: 30%;
+      background-color: grey;
+      border-radius: 5%;
+    }
+    p{
+      margin-top: 12%;
+      margin-left: 2%;
+      color: white;
+    }
+    </style>
+    <container>
+<h2>Code</h2>
+<p>function setup() {<br>
+createCanvas(660, 660);<br>
+background(225);<br>
+{<br>
+fill(102);<br>
+rect(0, 210.83, 733.33, 18.33);<br>
+}<br>
+{<br>
+fill(102);<br>
+rect(0, 430.33, 733.33, 18.33);<br>
+}<br>
+{<br>
+fill(102);<br>
+rect(430.33, 0, 18.33, 733.33);<br>
+}<br>
+  {<br>
+fill(102);<br>
+rect(210.83, 0, 18.33, 733.33);<br>
+}<br>
+}<br>
+var x = 0;<br>
+function mousePressed() {<br>
+let taille = (80);<br>
+x = x+1 ;<br>
+if (x%2 == 0) {<br>
+  if (pmouseX<220 && pmouseY<220) {<br>
+    {<br>
+      fill('red');<br>
+      stroke(0); }<br>
+      strokeWeight(3);<br>
+      ellipse(110, 110, taille);<br>
+     }<br>
+  if (pmouseX<440 && pmouseX>220 && pmouseY<220){<br>
+      fill('red');<br>
+      ellipse(330, 110, taille);<br>
+     }<br>
+   if (pmouseX>440 && pmouseY<220) {<br>
+      fill('red');<br>
+      ellipse(550, 110, taille);<br>
+     }<br>
+        if (pmouseX<220 && pmouseY>220 && pmouseY<440) {<br>
+      fill('red');<br>
+      ellipse(110, 330, taille);<br>
+     }<br>
+        if (pmouseX<220 && pmouseY>440) {<br>
+      fill('red');<br>
+      ellipse(110, 550, taille);<br>
+     }<br>
+        if (pmouseX>220 && pmouseY>440 && pmouseX<440) {<br>
+      fill('red');<br>
+      ellipse(330, 550, taille);<br>
+     }<br>
+         if (pmouseX>440 && pmouseY>440) {<br>
+      fill('red');<br>
+      ellipse(550, 550, taille);<br>
+     }<br>
+         if (pmouseX>440 && pmouseY>220 && pmouseY<440) {<br>
+      fill('red');<br>
+      ellipse(550, 330, taille);<br>
+     }<br>
+         if (pmouseX>220 && pmouseY<440 && pmouseX<440) {<br>
+           if (pmouseY>220){<br>
+      fill('red');<br>
+      ellipse(330, 330, taille);<br>
+           }<br>
+     }<br>
+ }<br>
+
+else   {<br>
+  if (pmouseX<220 && pmouseY<220) {<br>
+      fill('blue');<br>
+      stroke(0);<br>
+      strokeWeight(3);<br>
+      square(70, 70, taille);<br>
+     }<br>
+  if (pmouseX<440 && pmouseX>220 && pmouseY<220){<br>
+      fill('blue');<br>
+      square(290, 70, taille);<br>
+     }<br>
+   if (pmouseX>440 && pmouseY<220) {<br>
+      fill('blue');<br>
+      square(510, 70, taille);<br>
+     }<br>
+        if (pmouseX<220 && pmouseY>220 && pmouseY<440) {<br>
+      fill('blue');<br>
+      square(70, 290, taille);<br>
+     }<br>
+        if (pmouseX<220 && pmouseY>440) {<br>
+      fill('blue');<br>
+      square(70, 510, taille);<br>
+     }<br>
+        if (pmouseX>220 && pmouseY>440 && pmouseX<440) {<br>
+      fill('blue');<br>
+      square(290, 510, taille);<br>
+     }<br>
+         if (pmouseX>440 && pmouseY>440) {<br>
+      fill('blue');<br>
+      square(510, 510, taille);<br>
+     }<br>
+         if (pmouseX>440 && pmouseY>220 && pmouseY<440) {<br>
+      fill('blue');<br>
+      square(510, 290, taille);<br>
+     }<br>
+         if (pmouseX>220 && pmouseY<440 && pmouseX<440) {<br>
+           if (pmouseY>220){<br>
+      fill('blue');<br>
+      square(290, 290, taille);<br>
+           }<br>
+     }<br>
+}<br>
+}</p>
+    </container>
+  </body>
+</html>
