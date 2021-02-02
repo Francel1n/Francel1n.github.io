@@ -54,6 +54,34 @@ margin-left: 20%;
  /* font-family: Verdana, sans-serif; */
  font-family: "eurostile", sans-serif;
  }
+ h3 {
+   color: white;
+   margin-left: 8%;
+ }
+ .un{
+   background-color: grey;
+   border-radius: 7.5%;
+   position: absolute;
+   top: 380%;
+   left: 16.5%;
+   width: 12%;
+ }
+ .deux{
+   background-color: grey;
+   border-radius: 7.5%;
+   position: absolute;
+   top: 380%;
+   left: 44%;
+   width: 12%;
+ }
+.trois{
+  background-color: grey;
+  border-radius: 7.5%;
+  position: absolute;
+  top: 380%;
+  left: 71.5%;
+  width: 12%;
+}
  mini {
    color: black;
      font-family: "eurostile", sans-serif;
