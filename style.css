@@ -57,12 +57,19 @@ margin-left: 20%;
  h3 {
    color: white;
    margin-left: 8%;
+   text-decoration: underline;
+ }
+ h3:hover{
+   text-decoration: underline blue;
+ }
+ h4{
+
  }
  .un{
    background-color: grey;
    border-radius: 7.5%;
    position: absolute;
-   top: 380%;
+   top: 405%;
    left: 16.5%;
    width: 12%;
  }
@@ -70,7 +77,7 @@ margin-left: 20%;
    background-color: grey;
    border-radius: 7.5%;
    position: absolute;
-   top: 380%;
+   top: 405%;
    left: 44%;
    width: 12%;
  }
@@ -78,7 +85,7 @@ margin-left: 20%;
   background-color: grey;
   border-radius: 7.5%;
   position: absolute;
-  top: 380%;
+  top: 405%;
   left: 71.5%;
   width: 12%;
 }
@@ -271,6 +278,7 @@ margin-right: auto
   top: 165%;
   width: 21%;
   height: 101%;
+  min-height: 950px;
 background: linear-gradient(170deg, white, white);
     /* background-color:   #d3a2fb ; */
   border: 1px solid #c7c7c7;
@@ -285,6 +293,7 @@ background: linear-gradient(170deg, white, white);
 
   width: 21%;
   height: 101%;
+  min-height: 950px;
   background: linear-gradient(white, white) ;
   border: 1px solid #c7c7c7;
   position: absolute;
@@ -304,6 +313,7 @@ left: 39.5%;
   top: 165%;
   width: 21%;
   height: 101%;
+  min-height: 950px;
   background: linear-gradient(190deg, white, white);
   border: 1px solid #c7c7c7;
   border-radius: 1em 0 0 1em;
@@ -332,12 +342,20 @@ left: 39.5%;
 .github{
   position: absolute;
   bottom: 0%;
-  left: 40%;
+  left: 35%;
 }
 .linkedin{
   position: absolute;
   bottom: 0%;
-  right: 40%;
+  right: 35%;
+}
+#carreblanc{
+  position: absolute;
+  top: -10%;
+  width: 100%;
+  height: 45%;
+  background-color: white;
+  border: grey 5px;
 }
 #profil{
   color: #023bbf;
@@ -346,7 +364,7 @@ left: 39.5%;
   margin: 0;
   position: absolute;
   width: 18%;
-  top: 300%;
+  top: 320%;
   left: 40%;
 }
 #Profile{
@@ -367,17 +385,28 @@ left: 40%;
   font-size: 3.5em;
 }
 #pcontact{
+
+  z-index: 10;
   position: absolute;
-  left: -100%;
+  left: 150%;
+  width: 100%;
+}
+a:link{
+  color: blue;
 }
 #contactp{
+  z-index: 10;
   position: absolute;
-  left: 100%;
-  width: 120%;
+  left: -150%;
+  height: 20%;
+  width: 80%;
+}
+#ehoui{
+  color: blue;
 }
 .container {
   position: absolute;
-  top: 330%;
+  top: 355%;
   left: 14%;
   width: 18%;
   border-radius: 4%;
@@ -426,7 +455,7 @@ left: 40%;
     border-radius: 4%;
     border: 2px solid #023bbf;
     left: 41%;
-    top: 335%;
+    top: 360%;
   }
 
   .imagehm {
@@ -469,7 +498,7 @@ left: 40%;
     .containerhc {
       position: absolute;
       right: 14%;
-      top: 330%;
+      top: 355%;
       width: 18%;
       border-radius: 4%;
       border: 2px solid #023bbf;
