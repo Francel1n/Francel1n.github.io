@@ -341,12 +341,12 @@ left: 39.5%;
 }
 .github{
   position: absolute;
-  bottom: 0%;
+  bottom: 10%;
   left: 35%;
 }
 .linkedin{
   position: absolute;
-  bottom: 0%;
+  bottom: 10%;
   right: 35%;
 }
 #carreblanc{
@@ -601,6 +601,9 @@ a:link{
   animation-fill-mode: forwards;
   bottom: 0;
   transform: translate(0, 100%);
+}
+#ancre{
+  color: white;
 }
 .animated-title > div.text-top div span:first-child {
   color: grey;
