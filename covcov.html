@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimuCovid !</title>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    p{
+        font-size: 120%;
+    }
+    body {
+        font-family: 'RocknRoll One', sans-serif;
+        background-image: url("index.jpg");
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        color: lightgrey;
+        position: absolute;
+        top: 16%;
+        left: 15%;
+        width: 30%;
+    }
+    h1 {
+           color: grey;
+       }
+    #zer{
+        color: lightgreen;
+    }
+    #rep{
+        position: absolute;
+        top: 480%;
+        width: 40%;
+        left: 30%;
+    }
+    #yey{
+        position: absolute;
+        left: 40%;
+    }
+</style>
+<body>
+<!--    <a href="virus.html">cliquer</a>-->
+    <h1>Bienvenue sur SimuCovid2000</h1>
+    <h2>Remplis les cases et appuie sur "Lancer" !<br></h2>
+    <div id="app">
+        <div class="container">
+            <div class="row">
+                <p class="Blaze">La pièce/L'endroit a une superficie de <input type="Text" v-model="superficie" /> m2<br></p>
+            </div>
+            <div class="row">
+                <p class="Blaze">
+                    Port du masque : <select name="pets" id="pet-select">
+                        <option selected value="m5">Non port du masque</option>
+                        <option value="m4">Port du masque hors des moments de grignotage</option>
+                        <option value="m3">Port de la visière</option>
+                        <option value="m2">Port de masques divers</option>
+                        <option value="m1">Port de masques ffp2</option>
+                    </select><br>
+                </p>
+            </div>
+            <div class="roww">
+                <p class="Blazzze">
+                    Vous êtes en <select name="pets" id="pet-select">
+                        <option selected value="m5">Interieur</option>
+                        <option value="m4">Exterieur</option>
+                    </select><br>
+                </p>
+            </div>
+            <div class="row">
+                <p class="Blaze">Il y a <input type="Text" v-model="nombreDeP" /> personnes dans la pièce<br></p>
+            </div>
+            <button id="yey" onclick="Calcul()"><a href="#rep">Lancer</a></button>
+            <div id="rep">
+                <h3>Si une personne est contaminée dans la pièce,</h3><h2>vous avez <h2 id="zer">{{result}}%</h2><h2> de chances d'être contaminé également</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#animated-number-demo',
+            data: {
+                number: 0,
+                tweenedNumber: 0
+            },
+            computed: {
+                sALUT: function () {
+                    return this.tweenedNumber.toFixed(0);
+                }
+            },
+            watch: {
+                number: function (newValue) {
+                    gsap.to(this.$data, { duration: 0.5, tweenedNumber: newValue });
+                }
+            }
+        })
+        var app = new Vue({
+            el: "#app",
+            data: {
+                personne: "SomeoneLikeYouuuu",
+                superficie: "0",
+                nombreDeP: "0",
+                pDuMasque: "Inconnu",
+                result: 0,
+                produits: ["Pizza", "Hamburger", "Cheeseburger"]
+            }
+
+        })
+        function Calcul() {
+            app.result = 0
+            let ratio = 0
+            
+            ratio = app.nombreDeP / app.superficie * 70
+            app.result += ratio
+
+            if (app.pDuMasque == 'm1') {
+                app.result /= 2.75
+            }
+            if (app.pDuMasque == 'm2') {
+                app.result /= 3.5
+            }
+        }
+    </script>
+
+</body>
+</html>
