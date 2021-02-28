@@ -56,7 +56,7 @@
             </div>
             <div class="row">
                 <p class="Blaze">
-                    Port du masque : <select name="pets" id="pet-select">
+                    Port du masque : <select name="pets" v-model="pDuMasque" id="pet-select">
                         <option selected value="m5">Non port du masque</option>
                         <option value="m4">Port du masque hors des moments de grignotage</option>
                         <option value="m3">Port de la visière</option>
@@ -67,9 +67,10 @@
             </div>
             <div class="roww">
                 <p class="Blazzze">
-                    Vous êtes en <select name="pets" id="pet-select">
-                        <option selected value="m5">Interieur</option>
-                        <option value="m4">Exterieur</option>
+                    Vous êtes en <select name="pets" v-model="location" id="pet-select">
+                        <option selected value="p5">Interieur</option>
+                        <option value="p45">Interieur avec fenêtres ouvertes</option>
+                        <option value="p4">Exterieur</option>
                     </select><br>
                 </p>
             </div>
@@ -83,23 +84,6 @@
         </div>
     </div>
     <script>
-        new Vue({
-            el: '#animated-number-demo',
-            data: {
-                number: 0,
-                tweenedNumber: 0
-            },
-            computed: {
-                sALUT: function () {
-                    return this.tweenedNumber.toFixed(0);
-                }
-            },
-            watch: {
-                number: function (newValue) {
-                    gsap.to(this.$data, { duration: 0.5, tweenedNumber: newValue });
-                }
-            }
-        })
         var app = new Vue({
             el: "#app",
             data: {
@@ -108,22 +92,34 @@
                 nombreDeP: "0",
                 pDuMasque: "Inconnu",
                 result: 0,
-                produits: ["Pizza", "Hamburger", "Cheeseburger"]
+                location: "Inconnu",
             }
 
         })
         function Calcul() {
             app.result = 0
             let ratio = 0
-            
+
             ratio = app.nombreDeP / app.superficie * 70
             app.result += ratio
 
             if (app.pDuMasque == 'm1') {
-                app.result /= 2.75
+                app.result /= 3.5
             }
             if (app.pDuMasque == 'm2') {
-                app.result /= 3.5
+                app.result /= 2.75
+            }
+            if (app.pDuMasque == 'm3') {
+                app.result /= 1.5
+            }
+            if (app.pDuMasque == 'm4') {
+                app.result /= 1.75
+            }
+            if (app.location == 'p4') {
+                app.result /= 6
+            }
+            if (app.location == 'p45') {
+                app.result /= 1.75
             }
         }
     </script>
