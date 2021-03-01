@@ -11,6 +11,22 @@
     <title>SimuCovid !</title>
 </head>
 <style>
+#container{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 10%;
+}
+#container:hover{
+  opacity: 0.9;
+}
+input[type=text] {
+  width: 13%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
     html {
         scroll-behavior: smooth;
     }
@@ -33,12 +49,16 @@
        }
     #zer{
         color: lightgreen;
+        text-align: center;
     }
-    #rep{
-        position: absolute;
-        top: 480%;
-        width: 40%;
-        left: 30%;
+    #result{
+position: absolute;
+top: 57%;
+left: 192%;
+background-color: white;
+border-radius: 50%;
+width: 90px;
+height: 90px;
     }
     #yey{
         position: absolute;
@@ -47,9 +67,12 @@
 </style>
 <body>
 <!--    <a href="virus.html">cliquer</a>-->
-    <h1>Bienvenue sur SimuCovid2000</h1>
+<h1>Bienvenue sur SimuCovid2000</h1>
+
+
     <h2>Remplis les cases et appuie sur "Lancer" !<br></h2>
     <div id="app">
+      <div id="container">
         <div class="container">
             <div class="row">
                 <p class="Blaze">La pièce/L'endroit a une superficie de <input type="Text" v-model="superficie" /> m2<br></p>
@@ -78,10 +101,12 @@
                 <p class="Blaze">Il y a <input type="Text" v-model="nombreDeP" /> personnes dans la pièce<br></p>
             </div>
             <button id="yey" onclick="Calcul()"><a href="#rep">Lancer</a></button>
-            <div id="rep">
-                <h3>Si une personne est contaminée dans la pièce,</h3><h2>vous avez <h2 id="zer">{{result}}%</h2><h2> de chances d'être contaminé également</h2>
-            </div>
+
+          </div>
         </div>
+        <div id="result">
+        <h2 id="zer">{{result}}%</h2>
+      </div>
     </div>
     <script>
         var app = new Vue({
@@ -120,6 +145,12 @@
             }
             if (app.location == 'p45') {
                 app.result /= 1.75
+            }
+            if (app.result >= 100) {
+              app.result = 99.99
+            }
+            if (isNaN(app.result)) {
+              app.result = "Erreur"
             }
         }
     </script>
