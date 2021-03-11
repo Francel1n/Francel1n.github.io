@@ -56,7 +56,7 @@ margin-left: 20%;
  }
  h3 {
    color: white;
-   margin-left: 8%;
+   margin-left: 0%;
    text-decoration: underline;
  }
  h3:hover{
@@ -72,6 +72,7 @@ margin-left: 20%;
    top: 395%;
    left: 16.5%;
    width: 12%;
+   text-align: center;
  }
  .deux{
    background-color: grey;
@@ -80,6 +81,7 @@ margin-left: 20%;
    top: 395%;
    left: 44%;
    width: 12%;
+   text-align: center;
  }
 .trois{
   background-color: grey;
@@ -88,6 +90,16 @@ margin-left: 20%;
   top: 395%;
   left: 71.5%;
   width: 12%;
+  text-align: center;
+}
+.quatre{
+  background-color: grey;
+  border-radius: 7.5%;
+  position: absolute;
+  top: 455%;
+  left: 44%;
+  width: 12%;
+  text-align: center;
 }
  mini {
    color: black;
